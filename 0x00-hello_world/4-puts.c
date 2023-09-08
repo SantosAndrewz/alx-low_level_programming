@@ -2,7 +2,7 @@
 /**
  * main - A program that prints without using printf function
  *
- * return (0) -success
+ * Return: 0 if program is successful
  */
 int main(void)
 {
