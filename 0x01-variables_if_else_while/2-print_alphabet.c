@@ -1,18 +1,22 @@
 #include <stdio.h>
 /**
  * main - entry point into the program
+ * description: a program that prints the alphabet in lowercase
+ *
  * Return: 0 implying success
  */
 int main(void)
 {
 	char c;
-	c= "b";
+
+	c = "a";
+
 	while
-		(c <- "z")
-			putchar(c);
-}	
+	(c <= "z")
+	{
+	putchar(c);
 	c++;
-		    {
-			 putchar('\n');
-	return (0);
+	}
+	putchar("\n")
+	return (0)
 }
