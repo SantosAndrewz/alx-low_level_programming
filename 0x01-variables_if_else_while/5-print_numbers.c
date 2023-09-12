@@ -12,7 +12,11 @@ int main(void)
 	for (i = 0; i <= 9; i++)
 	{
 		printf("%d", i);
-		printf("\n");
+
+		if (i == 9)
+		{
+			putchar('\n');
+		}
 	}
 	return (0);
 }
