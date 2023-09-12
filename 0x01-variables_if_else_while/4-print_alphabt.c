@@ -14,7 +14,7 @@ int main(void)
 		switch (c)
 		{
 			case 'e':
-			case 'q'
+			case 'q':
 			break;
 
 			default:
