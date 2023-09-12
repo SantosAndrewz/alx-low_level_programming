@@ -1,4 +1,4 @@
-#include <stdio.i>
+#include <stdio.h>
 /**
  * main - entry point
  * description: program prints single numbers of base 10 using putchar
