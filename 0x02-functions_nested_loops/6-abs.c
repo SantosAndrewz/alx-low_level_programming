@@ -5,7 +5,7 @@
  *
  * Return: the ansolute value of n.
  */
-int _abs(int)
+int _abs(int n)
 {
 	while (n < 0)
 	{
