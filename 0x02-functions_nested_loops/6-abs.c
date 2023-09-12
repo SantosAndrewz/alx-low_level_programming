@@ -10,7 +10,7 @@ int _abs(int n)
 {
 	if (n == -2147483648)
 	{
-	return (2147483647);
+	return (-2147483648);
 	}
 	else if (n < 0)
 	{
