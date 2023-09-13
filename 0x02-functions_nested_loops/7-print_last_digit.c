@@ -10,11 +10,6 @@ int print_last_digit(int n)
 {
 	int last_digit;
 
-	if (n == -2147483648)
-	{
-		last_digit = 8;
-		_putchar('8');
-	}
 	if (n < 0)
 	{
 		n = -n * -1;
