@@ -6,6 +6,7 @@
  * Return: void
  */
 void times_table(void)
+{
 	int q, p, r, x, u;
 
 	for (q = 0; q <= 9; q++)
