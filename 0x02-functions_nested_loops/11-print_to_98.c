@@ -2,21 +2,41 @@
 #include <stdio.h>
 /**
  * print_to_98 - prints all natural numbers from n to 98, followed by a newline
- * @n: number that is printed
+ * @n: number that is printed first.
  *
  * Return: void
  */
 void print_to_98(int n)
 {
-	int a;
-
-	for (a = n; a <= 98; a++)
+	if (n <= 98)
 	{
-		if (a != n)
-		{
-			printf(", );
-		}
-		printf("%d", a);
+	for (; n <= 98; a++)
+	{
+	if (n == 98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
 	}
-		printf("\n");
+	else
+	{
+	printf("%d, ", n);
+	}
+	}
+	}
+	else
+	{
+	for (; n >= 98; n--)
+	{
+	if (n ==98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
+	}
+	else
+	}
+	printf("%d, ", n);
+	}
+
 }
