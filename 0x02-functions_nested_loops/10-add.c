@@ -4,9 +4,9 @@
  * @x: the first ineteger.
  * @y: the second integer.
  *
- * Return: the result of (a + b).
+ * Return: the result of (x + y).
  */
-int add(int a, int b)
+int add(int x, int y)
 {
-	return (a + b);
+	return (x + y);
 }
