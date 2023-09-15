@@ -9,14 +9,14 @@
  */
 int _isupper(int c)
 {
-	int r = 0
+	int r = 0;
 
-if (c >= 'A' && c <= 'Z')
-{
-return (1);
-}
-else
-{
-return (0);
-}
+
+	if (c >= 'A' && c <= 'Z')
+	{
+		r = 1;
+	}
+
+return (r);
+
 }
