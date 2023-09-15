@@ -4,7 +4,7 @@
  * @a: first imteger.
  * @b: second integer.
  *
- * Return: multiple  of a * b
+ * Return: (a * b)
  */
 int mul(int a, int b)
 {
