@@ -4,9 +4,9 @@
  * @a: first imteger.
  * @b: second integer.
  *
- * Return: multiple a * b
-int mul(int a, int)
-{      
-      retun: (a * b)
-
+ * Return: multiple  of a * b
+ */
+int mul(int a, int b)
+{
+	 return: (a * b)
 }
