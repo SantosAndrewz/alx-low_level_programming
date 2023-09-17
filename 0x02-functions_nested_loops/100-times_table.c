@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - prints the n times table, starting with 0.
  * @n: the number of times the table is printed.
@@ -35,7 +35,7 @@ printf(",  %d", p);
 }
 else
 {
-printf(", %d, p);
+printf(", %d", p);
 }
 }
 }
