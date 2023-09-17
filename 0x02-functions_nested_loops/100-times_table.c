@@ -10,11 +10,11 @@ void print_times_table(int n)
 {
 int i, x, p;
 
+for (i = 0; i <= n; i++)
+{
 if (i < 0 || n > 15)
 return;
 
-for (i = 0; i <= n; i++)
-{
 for (x = 0; x <= n; x++)
 {
 p = i * x;
