@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * print_times_table - prints the n times table, starting with 0.
@@ -17,7 +17,7 @@ for (i = 0; i <= n; i++)
 {
 for (x = 0; x <= n; x++)
 {
-p = i *x;
+p = i * x;
 if (x == 0)
 {
 printf("%d", p);
