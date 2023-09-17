@@ -1,9 +1,8 @@
-#include <stdio.h>
+i#include <stdio.h>
 #include "main.h"
 /**
  * print_times_table - prints the n times table, starting with 0.
  * @n: the number of times the table is printed.
- * _putchar: prints a single character.
  *
  * Return: void
  */
@@ -18,15 +17,27 @@ for (i = 0; i <= n; i++)
 {
 for (x = 0; x <= n; x++)
 {
-p = i * x;
+p = i *x;
 if (x == 0)
+{
 printf("%d", p);
-else if (p < 10)
-printf(", %d", p);
-else if (p < 100)
-printf(", %d", p);
+}
 else
+{
+printf(", ");
+if (p < 10)
+{
+printf(",   %d", p);
+}
+else if (p < 100)
+{
+printf(",  %d", p);
+}
+else
+{
 printf(", %d, p);
+}
+}
 }
 printf("\n");
 }
