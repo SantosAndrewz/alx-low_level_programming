@@ -27,15 +27,15 @@ else
 printf(", ");
 if (p < 10)
 {
-printf(",   %d", p);
+printf("   %d", p);
 }
 else if (p < 100)
 {
-printf(",  %d", p);
+printf("  %d", p);
 }
 else
 {
-printf(", %d", p);
+printf(" %d", p);
 }
 }
 }
