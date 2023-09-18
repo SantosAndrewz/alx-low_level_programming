@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point to the program.
  * description: prints the first 98 Fibonacci numbers, starting with 1 and 2.
  *
  * Return: 0 for success
