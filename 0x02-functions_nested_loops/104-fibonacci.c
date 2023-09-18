@@ -12,7 +12,7 @@ unsigned long int x = 1;
 unsigned long int y = 2;
 unsigned long int temp;
 
-printf("%lu, %lu", 1, 2);
+printf("%u, %u", 1, 2);
 for (i = 2; i <= 98; i++)
 {
 temp = x + y;
