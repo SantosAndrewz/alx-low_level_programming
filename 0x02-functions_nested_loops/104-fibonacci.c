@@ -12,8 +12,8 @@ unsigned long int x = 1;
 unsigned long int y = 2;
 unsigned long int temp;
 
-printf("%d, %d", 1, 2);
-for (i = 2; i < 98; i++)
+printf("%lu, %lu", 1, 2);
+for (i = 2; i <= 98; i++)
 {
 temp = x + y;
 x = y;
