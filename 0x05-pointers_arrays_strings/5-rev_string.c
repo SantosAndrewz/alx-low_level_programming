@@ -22,6 +22,6 @@ temp = s[i];
 s[i] = s[x];
 s[x] = temp;
 i++;
-x++;
+x--;
 }
 }
