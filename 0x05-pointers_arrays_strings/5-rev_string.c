@@ -12,7 +12,7 @@ int i = 0;
 char temp;
 
 while (s[i++])
-len++;
+len--;
 for (i = len - 1; i >= len / 2; i--)
 {
 temp = s[i];
