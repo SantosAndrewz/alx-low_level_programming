@@ -11,7 +11,7 @@ int i = 0;
 int x = 0;
 char temp;
 
-for (s[x + 1] != '\0')
+for (s[x + 1] != '\0';)
 {
 x++;
 }
