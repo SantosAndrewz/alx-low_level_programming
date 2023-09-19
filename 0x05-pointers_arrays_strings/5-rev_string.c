@@ -11,10 +11,11 @@ int i = 0;
 int x = 0;
 char temp;
 
-for (s[x + 1] != '\0';)
+while (s[x] != '\0')
 {
 x++;
 }
+x--;
 while (i < x)
 {
 temp = s[i];
