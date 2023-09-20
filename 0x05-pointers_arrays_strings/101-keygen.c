@@ -14,7 +14,7 @@ int n;
 int sum = 0;
 int pswd[100];
 
-srand(time('\0');
+srand(time('\0'));
 
 for (i = 0; i < 100; i++)
 {
