@@ -9,25 +9,42 @@
  */
 int main(void)
 {
-int i;
-int n;
+int i = 0;
 int sum = 0;
-int pswd[100];
+int dh1, dh2;
+char pswd[84];
 
-srand(time(NULL));
+srand(time(0));
 
-for (i = 0; i < 100; i++)
+while (sum < 2772)
 {
-pswd[i] = rand() % 78;
-sum += pswd[i] + '0';
-putchar(pswd[i] + '0');
-if ((2772 - sum) - '0' < 78)
+pswd[i] = 33 + rand() % 94;
+sum += pswd[i++];
+}
+pswd[i] = '\0';
+if (sum != 2772)
 {
-n = 2772 - sum;
-sum += n;
-putchar(n + '0');
+dh1 = (sum - 2772) / 2;
+dh2 = (sum - 2772) / 2;
+if ((sum - 2772) % 2 != 0)
+dh1++;
+for (i = 0; pswd[i]; i++)
+{
+if (pswd[i] >= (33 + dh1))
+{
+pswd[i] -= dh1;
+break;
+}
+for (i = 0; pswd[i]; i++)
+{
+if (pswd[i] >= (33 + dh2))
+{
+pswd[i] -= dh2;
 break;
 }
 }
+}
+printf("%s", pswd);
 return (0);
+}
 }
