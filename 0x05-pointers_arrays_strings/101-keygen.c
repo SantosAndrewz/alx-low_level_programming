@@ -45,6 +45,6 @@ break;
 }
 }
 printf("%s", pswd);
-return (0);
 }
+return (0);
 }
