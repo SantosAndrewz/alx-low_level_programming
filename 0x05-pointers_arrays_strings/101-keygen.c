@@ -19,9 +19,9 @@ srand(time(NULL));
 for (i = 0; i < 100; i++)
 {
 pswd[i] = rand() % 78;
-sum += pswd[i];
+sum += pswd[i] + '0';
 putchar(pswd[i] + '0');
-if ((2772 - sum) < 78)
+if ((2772 - sum) - '0' < 78)
 {
 n = 2772 - sum;
 sum += n;
