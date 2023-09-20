@@ -24,27 +24,30 @@ sum += pswd[i++];
 pswd[i] = '\0';
 if (sum != 2772)
 {
-dh1 = (sum - 2772) / 2;
-dh2 = (sum - 2772) / 2;
-if ((sum - 2772) % 2 != 0)
-dh1++;
+dh1 = (sum > 2772) ? (sum - 2772) / 2 : (2772 - sum) / 2;
+dh2 = (sum > 2772) ? (sum - 2772) / 2 : (2772 - sum) / 2;
 for (i = 0; pswd[i]; i++)
 {
-if (pswd[i] >= (33 + dh1))
+if (sum > 2772 && pswd[i] >= (33 + dh1))
 {
 pswd[i] -= dh1;
 break;
 }
-for (i = 0; pswd[i]; i++)
+else if (sum > 2772 && pswd[i] <= (126 - dh2))
 {
-if (pswd[i] >= (33 + dh2))
-{
-pswd[i] -= dh2;
+pswd[i] += dh2;
 break;
 }
 }
 }
-printf("%s", pswd);
+printf("%s\n", pswd);
+if (strcmp(pswd, "Tada! Congrats") == 0)
+{
+printf("Password cracked successfully.\n");
+}
+else
+{
+printf("Failed to generate the correct password.\n");
 }
 return (0);
 }
