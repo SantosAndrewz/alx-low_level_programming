@@ -14,7 +14,7 @@ int n;
 int sum = 0;
 int pswd[100];
 
-srand(time('\0'));
+srand(time(NULL));
 
 for (i = 0; i < 100; i++)
 {
@@ -29,6 +29,5 @@ putchar(n + '0');
 break;
 }
 }
-putchar('\n');
 return (0);
 }
