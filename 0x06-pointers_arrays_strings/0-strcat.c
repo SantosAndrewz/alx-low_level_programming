@@ -15,9 +15,9 @@ while (dest[i] != '\0')
 {
 i++;
 }
-while (scr[x] != '\0')
+while (src[x] != '\0')
 {
-dest[i] = scr[x];
+dest[i] = src[x];
 i++;
 x++;
 }
