@@ -21,5 +21,5 @@ while (x < n)
 dest[x] = '\0';
 x++;
 }
-return;
+return (dest);
 }
