@@ -15,7 +15,7 @@ x = n;
 if (n < 0)
 {
 _putchar('-');
-_putchar(x);
+x = -n;
 }
 if (x / 10 != 0)
 {
