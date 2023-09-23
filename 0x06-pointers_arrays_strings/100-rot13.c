@@ -18,7 +18,7 @@ for (x = 0; x < 52; x++)
 {
 if (str[i] == str1[x])
 {
-str[x] = str2[x];
+str[i] = str2[x];
 break;
 }
 }
