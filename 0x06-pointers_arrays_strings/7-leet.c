@@ -11,11 +11,11 @@ char *leet(char *str)
 char str1[] = "aeotlAEOTL";
 char str2[] = "4307143071";
 int i = 0;
-int x = 0;
+int x;
 
 while (str[i] != '\0')
 {
-for (x <= 9; x++)
+for (x = 0; x <= 9; x++)
 {
 if (str[i] == str1[x])
 {
