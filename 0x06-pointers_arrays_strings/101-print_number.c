@@ -11,10 +11,9 @@ void print_number(int n)
 {
 unsigned int x;
 
-x = n;
 if (n < 0)
 {
-x = -n;
+x = n;
 _putchar('-');
 _putchar(x);
 }
