@@ -12,13 +12,13 @@ int x;
 char *str1 = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWQYZ"};
 char *str2 = {"nopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWQYZ"};
 
-for (i = o; str[i] != '\n'; i++)
+for (i = 0; str[i] != '\n'; i++)
 {
 for (x = 0; x < 52; x++)
 {
 if (str[i] == str1[x])
 {
-str1[x] = str2[x];
+str[x] = str2[x];
 break;
 }
 }
