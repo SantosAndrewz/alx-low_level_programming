@@ -9,8 +9,8 @@ char *rot13(char *str)
 {
 int i = 0;
 int x;
-str1 = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWQYZ"}
-str2 = {"nopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWQYZ"}
+char str1 = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWQYZ"}
+char str2 = {"nopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWQYZ"}
 
 while (str[i] != '\n')
 {
