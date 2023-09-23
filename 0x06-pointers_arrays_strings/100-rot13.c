@@ -12,7 +12,7 @@ int x;
 char *str1 = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWQYZ"};
 char *str2 = {"nopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWQYZ"};
 
-for (i = 0; str[i] != '\n'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 for (x = 0; x < 52; x++)
 {
