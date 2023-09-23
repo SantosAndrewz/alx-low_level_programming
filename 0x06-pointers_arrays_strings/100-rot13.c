@@ -16,7 +16,7 @@ while (str[i] != '\n')
 {
 for (x = 0; x < 52; x++)
 {
-if (str[i] == str[x])
+if (str[i] == str1[x])
 {
 str1[x] = str2[x];
 }
