@@ -27,5 +27,5 @@ return (x);
 }
 s++;
 }
-return(x);
+return (x);
 }
