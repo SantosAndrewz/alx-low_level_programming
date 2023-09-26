@@ -20,9 +20,9 @@ if (*s == accept[i])
 x++;
 break;
 }
-else if (accept[i + 1] == '\0')
+else if (accept[i] == '\0')
 {
-return (x);
+break;
 }
 }
 s++;
