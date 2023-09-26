@@ -12,16 +12,16 @@
 char *_strstr(char *haystack, char *needle)
 {
 
-for (; haystack != '\0'; haystack++)
+for (; *haystack != '\0'; haystack++)
 {
-char *h = haystack;
-char *n = needle;
-while (*h == *n && *n != '\0')
+char *x = haystack;
+char *y = needle;
+while (*x == *y && *y != '\0')
 {
-h++;
-n++;
+x++;
+y++;
 }
-if (*n == '\0')
+if (*y == '\0')
 return (haystack);
 }
 return (NULL);
