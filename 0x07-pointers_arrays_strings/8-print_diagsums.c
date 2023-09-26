@@ -18,5 +18,5 @@ for (x = 0; x < size; x++)
 sum1 = sum1 + a[x * size + x];
 sum2 = sum2 + a[x * size + (size - 1 - x)];
 }
-printf("Sum:%d, %d\n", sum1, sum2)
+printf("Sum:%d, %d\n", sum1, sum2);
 }
