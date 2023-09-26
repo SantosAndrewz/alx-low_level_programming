@@ -17,7 +17,7 @@ for (x = 0; x <= (size * size); x + size - 1)
 {
 sum1 = sum1 + a[x];
 }
-for (y = size - 1; n <= (size * size) - size; y = y + size - 1)
+for (y = size - 1; y <= (size * size) - size; y = y + size - 1)
 {
 sum2 = sum2 + a[y];
 }
