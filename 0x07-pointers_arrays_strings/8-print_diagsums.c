@@ -13,13 +13,13 @@ int x, y;
 int sum1 = 0;
 int sum2 = 0;
 
-for (x = 0; x <= (size * size); x + size - 1)
+for (x = 0; x < size; x++)
 {
-sum1 = sum1 + a[x];
+sum1 = sum1 + a[(size + 1) * x];
 }
-for (y = size - 1; y <= (size * size) - size; y = y + size - 1)
+for (y = 0; y < size; y++)
 {
-sum2 = sum2 + a[y];
+sum2 = sum2 + a[(size - 1) * (y + 1)];
 }
 printf("Sum:%d, %d\n", sum1, sum2);
 }
