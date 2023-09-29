@@ -9,7 +9,7 @@ int _sqrt(int n, int j);
  *
  * Return: the value of the natural square root of a number.
  */
-int _sqrt_recursion(int n);
+int _sqrt_recursion(int n)
 {
 	return (_sqrt(n, 1));
 }
