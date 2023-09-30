@@ -43,8 +43,8 @@ int _strlen_recursion(char *s)
 int check_pal(char *s, int j, int len)
 {
 	if (j >= len)
-        {
-                return (1);
+	{
+		return (1);
 	}
 	if (*(s + j) != *(s + len - 1))
 	{
