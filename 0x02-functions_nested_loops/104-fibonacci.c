@@ -15,7 +15,7 @@ unsigned long int y1 = 0;
 unsigned long int y2 = 0;
 unsigned long int temp1, temp2;
 
-printf("%lu, %lu", x1, x2);
+printf("%lu, %lu, ", x1, x2);
 for (i = 2; i < 98; i++)
 {
 	if (x1 + x2 > LARGEST || y2 > 0 || y1 > 0)
