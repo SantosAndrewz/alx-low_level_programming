@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 		{
 			a[y++] = av[i][j];
 		}
-		if (i < ac - 1)
+		if (i < ac - 1 || j > 0)
 		{
 			a[y++] = '\n';
 		}
