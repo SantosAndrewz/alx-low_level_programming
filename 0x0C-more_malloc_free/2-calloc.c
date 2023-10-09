@@ -9,7 +9,7 @@
  * Return: A pointer to the allocated array, otherwise 0 on failure.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
-{	int x, ts
+{	int x, ts;
 	void *a;
 
 	if (nmemb == 0 || size == 0)
