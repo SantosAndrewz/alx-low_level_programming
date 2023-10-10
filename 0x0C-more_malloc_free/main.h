@@ -11,4 +11,14 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 
 int *array_range(int min, int max);
 
+int _putchar(char c);
+
+int is_digit(char *s);
+
+int _strlen(char *s);
+
+void errors(void);
+
+int main(int argc, char *argv[]);
+
 #endif
