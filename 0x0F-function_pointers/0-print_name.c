@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 #include <stdio.h>
 /**
- * print_name - a string name.
+ * print_name - prints a string name.
  * @name: the string to be printed.
  * @f: pointer to function that prints a climic.
  *
