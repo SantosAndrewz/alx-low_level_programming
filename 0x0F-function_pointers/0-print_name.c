@@ -4,6 +4,7 @@
  * print_name - prints a string name.
  * @name: the string to be printed.
  * @f: pointer to function that prints a climic.
+ * Description: Function prints the name using a pointer to function.
  *
  * Return: void.
  */
