@@ -12,6 +12,6 @@ void print_name(char *name, void (*f)(char))
 	while (*name)
 	{
 		_putchar(*name);
-		name++
+		name++;
 	}
 }
