@@ -3,7 +3,7 @@
 /**
  * print_name - a string name.
  * @name: the string to be printed.
- * @f: pointer to function.
+ * @f: pointer to function that prints a climic.
  *
  * Return: void.
  */
@@ -11,7 +11,7 @@ void print_name(char *name, void (*f)(char))
 {
 	while (*name)
 	{
-		_putchar(*name);
+		f(*name);
 		name++;
 	}
 }
