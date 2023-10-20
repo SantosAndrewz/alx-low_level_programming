@@ -29,16 +29,17 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (str == NULL)
 		return (NULL);
-	added = malloc(sizsof(list_t));
+	added = malloc(sizeof(list_t));
 	if (added == NULL)
 		return (NULL);
 
 	added->len = _strglen((char *)str);
 	added->next = NULL;
 	if (*head == NULL)
+	{
 		*head = added;
 		return (added);
-
+	}
 	temp = *head;
 	while (temp->next)
 		temp = temp->next;
