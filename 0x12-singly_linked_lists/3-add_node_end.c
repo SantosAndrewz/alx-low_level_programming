@@ -32,8 +32,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	added = malloc(sizeof(list_t));
 	if (added == NULL)
 		return (NULL);
-
-	added->len = _strglen((char *)str);
+	added->str = strdup(str);
+	if (added->str == NULL)
+	{
+		free (added);
+		return (NULL);
+	}
+	added->len = _strglen(added->str);
 	added->next = NULL;
 	if (*head == NULL)
 	{
