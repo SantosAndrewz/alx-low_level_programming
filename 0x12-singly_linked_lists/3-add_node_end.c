@@ -28,13 +28,13 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *temp, *added;
 
 	if (str == NULL)
-		return (0);
+		return (NULL);
 	added = malloc(sizsof(list_t));
 	if (added == NULL)
 		return (NULL);
 
-	added->len = _strglen(new->str);
-	added ->next = NULL;
+	added->len = _strglen((char *)str);
+	added->next = NULL;
 	if (*head == NULL)
 		*head = added;
 		return (added);
