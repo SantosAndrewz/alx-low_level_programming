@@ -32,7 +32,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		while (tmp_n->next != NULL)
 		{
-			tmp_n = temp->next;
+			tmp_n = tmp_n->next;
 		}
 		tmp_n->next = novel;
 	}
