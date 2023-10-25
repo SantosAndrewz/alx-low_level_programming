@@ -1,4 +1,4 @@
-#include "lists"
+#include "lists.h"
 /**
  * free_listint2 - frees a listint_t list.
  * @head: double pointer to the head of listint_t list.
