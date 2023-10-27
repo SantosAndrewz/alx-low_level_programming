@@ -7,13 +7,15 @@
  */
 int get_endianness(void)
 {
-	struct
+	/* struct endiandata - holds the value and byte indicators.
+	 * @vslue: unsigned integer.
+	 * @byte_indicator: byte to indicate endianness.
+	 */
+	struct endiandata
 	{
 		unsigned int value;
 		unsigned char byte_indicator;
-	} data = {1, 0};
-
-	data.value = 1;
+	} data = {0, 1};
 
 	if (data.byte_indicator == 1)
 	{
