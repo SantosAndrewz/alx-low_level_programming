@@ -20,19 +20,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 int _putchar(char c);
 
- /**
-  * struct endiandata - holds the value and byte indicators for endianness.
-  * @vslue: unsigned integer.
-  * @byte_indicator: byte to indicate endianness.
-  *
-  * Description: has data for endinness.
-  */
-typedef struct endiandata
-{
-	unsigned int value;
-	unsigned char byte_indicator;
-} data;
-
 int get_endianness(void);
 
 #endif
