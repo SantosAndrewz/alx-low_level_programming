@@ -34,6 +34,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		fwr = write(fopr, text_content, xch);
 		if (xch == -1)
 		{
+			close(fopr);
 			return (-1);
 		}
 	}
