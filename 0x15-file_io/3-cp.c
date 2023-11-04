@@ -65,8 +65,6 @@ int main(int argc, char *argv[])
 		if (written_txt != read_txt)
 			error_handle(99, "Error: Can't write to file to_f");
 	}
-	close(from_f);
-	close(to_f);
 	if (close(from_f) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", from_f);
