@@ -12,7 +12,7 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 		return (0);
-	for(; head != NULL; head = head->next)
+	for (; head != NULL; head = head->next)
 	{
 		sum_data = sum_data + head->n;
 	}
