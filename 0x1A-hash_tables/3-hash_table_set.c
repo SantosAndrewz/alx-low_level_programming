@@ -44,7 +44,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	n = malloc(sizeof(hash_node_t));
 	if (n == NULL)
 	{
-		free(n);
+		free(v_copy);
+		return (0);
+	}
+	n->key = strdup (key);
+	if (n->key == NULL)
+	{
+		free (n);
 		return (0);
 	}
 	n->value = v_copy;
