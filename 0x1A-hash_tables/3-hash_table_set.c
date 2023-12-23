@@ -13,11 +13,12 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int x, i;
-	char *v_copy;
-	hash_node_t *n;
+	char *v_copy = NULL;
+	hash_node_t *n = NULL;
 
 	if (ht == NULL || key == NULL || value == NULL || *key == '\0')
 	{
+		free(v_copy);
 		return (0);
 	}
 
@@ -34,6 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(ht->array[x]->key, key) == 0)
 		{
 			free(ht->array[x]->value);
+			free(n);
 			ht->array[x]->value = v_copy;
 			return (1);
 		}
