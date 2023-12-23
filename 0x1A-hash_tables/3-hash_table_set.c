@@ -47,10 +47,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(v_copy);
 		return (0);
 	}
-	n->key = strdup (key);
+	n->key = strdup(key);
 	if (n->key == NULL)
 	{
-		free (n);
+		free(v_copy);
+		free(n);
 		return (0);
 	}
 	n->value = v_copy;
